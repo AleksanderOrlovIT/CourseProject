@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:controller="khai.edu.com.gui.MainController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="38.0" layoutY="188.0" mnemonicParsing="false" onAction="#UsersButton" text="Users" />
+      <Button layoutX="126.0" layoutY="188.0" mnemonicParsing="false" onAction="#SPButton" text="SoftwareProducts" />
+      <Button layoutX="300.0" layoutY="188.0" mnemonicParsing="false" onAction="#OSButton" text="OperatingSystems" />
+      <Button layoutX="480.0" layoutY="188.0" mnemonicParsing="false" onAction="#ServersButton" text="Servers" />
+      <Label layoutX="222.0" layoutY="69.0" text="Choose your Option" />
+      <Button layoutX="35.0" layoutY="336.0" mnemonicParsing="false" onAction="#goBackMain" text="GoBack" />
+      <Button layoutX="95.0" layoutY="255.0" mnemonicParsing="false" onAction="#DBSButton" text="DataBases" />
+      <Button layoutX="229.0" layoutY="255.0" mnemonicParsing="false" onAction="#PDBSButton" text="ProgramDatabases" />
+      <Button layoutX="425.0" layoutY="255.0" mnemonicParsing="false" onAction="#UserProgramsButton" text="UserPrograms" />
+   </children>
+</AnchorPane>

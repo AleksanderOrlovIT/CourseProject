@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="khai.edu.com.gui.ServerController">
+    <children>
+        <Button layoutX="45.0" layoutY="337.0" mnemonicParsing="false" onAction="#SelectServer" text="Select server" />
+        <Button layoutX="45.0" layoutY="229.0" mnemonicParsing="false" onAction="#insertServer" text="Insert server" />
+        <TextField fx:id="ServerName" layoutX="316.0" layoutY="229.0" prefHeight="24.0" prefWidth="96.0" />
+        <TextField fx:id="ServerId" layoutX="182.0" layoutY="229.0" prefHeight="24.0" prefWidth="96.0" />
+        <Button layoutX="45.0" layoutY="264.0" mnemonicParsing="false" onAction="#UpdateServer" text="Update server" />
+        <Button layoutX="45.0" layoutY="303.0" mnemonicParsing="false" onAction="#DeleteServer" text="Delete server" />
+        <TextField fx:id="newServerId" layoutX="457.0" layoutY="229.0" prefHeight="24.0" prefWidth="96.0" />
+        <Label layoutX="182.0" layoutY="213.0" text="Id" />
+        <Label layoutX="316.0" layoutY="213.0" text="Name" />
+        <Label layoutX="457.0" layoutY="213.0" text="NewId" />
+        <TextArea fx:id="output" layoutX="20.0" layoutY="14.0" prefHeight="183.0" prefWidth="554.0" />
+        <Button layoutX="262.0" layoutY="293.0" mnemonicParsing="false" onAction="#goBackServer" prefHeight="44.0" prefWidth="228.0" text="Go Back" />
+    </children>
+</AnchorPane>
+

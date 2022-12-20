@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="khai.edu.com.gui.MainController">
+   <children>
+      <Button layoutX="155.0" layoutY="321.0" mnemonicParsing="false" onAction="#onLeaveButtonClick" prefHeight="55.0" prefWidth="160.0" text="Leave app" />
+      <Button layoutX="486.0" layoutY="321.0" mnemonicParsing="false" onAction="#onEnterButton" prefHeight="55.0" prefWidth="160.0" text="Enter app" />
+      <PasswordField fx:id="password" layoutX="315.0" layoutY="260.0" />
+      <TextField fx:id="login" layoutX="315.0" layoutY="184.0" />
+      <Label layoutX="213.0" layoutY="90.0" prefHeight="31.0" prefWidth="374.0" text="Please Input admin`s login and password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="188.0" text="Login:" />
+      <Label layoutX="236.0" layoutY="264.0" text="Password:" />
+      <Label fx:id="ErrorLabel" layoutX="566.0" layoutY="234.0" />
+      <Label layoutX="569.0" layoutY="226.0" text=" " />
+      <TextField fx:id="ErrorField" layoutX="533.0" layoutY="222.0" prefHeight="24.0" prefWidth="249.0" />
+   </children>
+</AnchorPane>

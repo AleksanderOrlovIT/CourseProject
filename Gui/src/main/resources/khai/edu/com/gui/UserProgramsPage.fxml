@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="khai.edu.com.gui.UserProgramsController">
+    <children>
+        <Button layoutX="19.0" layoutY="338.0" mnemonicParsing="false" onAction="#selectUserPrograms" text="Select userPrograms" />
+        <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" onAction="#insertUserPrograms" text="Insert userPrograms" />
+        <TextField fx:id="SPId" layoutX="316.0" layoutY="229.0" prefHeight="24.0" prefWidth="96.0" />
+        <TextField fx:id="userId" layoutX="182.0" layoutY="229.0" prefHeight="24.0" prefWidth="96.0" />
+        <Button layoutX="15.0" layoutY="253.0" mnemonicParsing="false" onAction="#updateUserPrograms" text="Update userPrograms" />
+        <Button layoutX="14.0" layoutY="291.0" mnemonicParsing="false" onAction="#deleteUserPrograms" text="Delete userPrograms" />
+        <TextField fx:id="newSPId" layoutX="316.0" layoutY="291.0" prefHeight="24.0" prefWidth="96.0" />
+        <Label layoutX="182.0" layoutY="213.0" text="userId" />
+        <Label layoutX="316.0" layoutY="213.0" text="SPId" />
+        <Label layoutX="318.0" layoutY="273.0" text="newSPId" />
+        <TextArea fx:id="output" layoutX="20.0" layoutY="14.0" prefHeight="183.0" prefWidth="554.0" />
+        <Button layoutX="183.0" layoutY="350.0" mnemonicParsing="false" onAction="#goBackUserPrograms" prefHeight="24.0" prefWidth="323.0" text="Go Back" />
+        <TextField fx:id="newUserId" layoutX="182.0" layoutY="291.0" prefHeight="24.0" prefWidth="96.0" />
+        <Label layoutX="183.0" layoutY="273.0" text="newUserId" />
+      <TextField fx:id="OSId" layoutX="446.0" layoutY="229.0" prefHeight="24.0" prefWidth="96.0" />
+      <TextField fx:id="newOSId" layoutX="446.0" layoutY="291.0" prefHeight="24.0" prefWidth="96.0" />
+      <Label layoutX="446.0" layoutY="214.0" text="OSId" />
+      <Label layoutX="446.0" layoutY="273.0" text="newOSId" />
+    </children>
+</AnchorPane>
