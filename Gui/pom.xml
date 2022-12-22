@@ -56,10 +56,11 @@
                     <includes>
                         <include>UsersCRUDTest.java</include>
                         <include>OSCRUDTest.java</include>
-                        <include>ServerCRUDTest.java</include>
+                        <include>ServerCrudTest.java</include>
                         <include>SPCRUDTest.java</include>
                         <include>DBCRUDTest.java</include>
-                        <include>UserProgramsCRUDTDest.java</include>
+                        <include>UserProgramsCRUDTest.java</include>
+                        <include>PDBSCRUDTest.java</include>
                     </includes>
                 </configuration>
             </plugin>
