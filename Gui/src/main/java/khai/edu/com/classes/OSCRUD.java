@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class OSCRUD {
     public static String deleteOS(Statement statement, int OSId){
         if(!OSIdExist(statement, OSId)){
-            return "Software product id doesn`t exist exception";
+            return "Operation system id doesn`t exist exception";
         }
         try {
             statement.executeUpdate("delete from operating_systems where OSId=" + OSId);

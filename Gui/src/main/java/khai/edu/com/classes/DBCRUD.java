@@ -56,7 +56,7 @@ public class DBCRUD {
                 return "No such server id exception";
             return "SQL exception insertDB";
         }
-        return "Successful update";
+        return "Successful insert";
     }
 
     public static String selectDBs(Statement statement){

@@ -35,4 +35,9 @@
     </plugin>
     </plugins>
     </build>
+
+    <modules>
+    <module>Gui</module>
+    </modules>
+    <packaging>pom</packaging>
 </project>

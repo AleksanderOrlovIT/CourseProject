@@ -5,16 +5,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class ServerCrud {
-    public static String deleteServer(Statement statement, int serversId){
-        if(!serversIdExist(statement, serversId)){
-            return serversId + " servers id doesn`t exist exception";
+    public static String insertServer(Statement statement, String name){
+        try{
+            name = String.valueOf('\'') + name + String.valueOf('\'');
+            statement.execute("insert into servers(name) values(" + name+")");
+        }catch (SQLException e){
+            System.out.println("Exception insert");
         }
-        try {
-            statement.executeUpdate("delete from servers where serversId=" + serversId);
-        } catch (SQLException e) {
-            return "Sql exception Server Delete";
-        }
-        return "Successful delete";
+        return "Successful insert";
     }
 
     public static String updateServer(Statement statement, int serversId, String newName, int newServersId){
@@ -33,14 +31,16 @@ public class ServerCrud {
         return "Successful update";
     }
 
-    public static String insertServer(Statement statement, String name){
-        try{
-            name = String.valueOf('\'') + name + String.valueOf('\'');
-            statement.execute("insert into servers(name) values(" + name+")");
-        }catch (SQLException e){
-            System.out.println("Exception insert");
+    public static String deleteServer(Statement statement, int serversId){
+        if(!serversIdExist(statement, serversId)){
+            return serversId + " servers id doesn`t exist exception";
         }
-        return "Successful insert";
+        try {
+            statement.executeUpdate("delete from servers where serversId=" + serversId);
+        } catch (SQLException e) {
+            return "Sql exception Server Delete";
+        }
+        return "Successful delete";
     }
 
     public static String selectServers(Statement statement){
